@@ -209,6 +209,22 @@ h1 {
   font-size: 1.1rem;
 }
 
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tile-merge {
+  animation: pop 0.5s ease;
+}
+
 /* Tablet breakpoint */
 @media (min-width: 768px) {
   .game-container {
